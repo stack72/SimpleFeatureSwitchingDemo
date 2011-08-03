@@ -48,6 +48,12 @@ namespace Mvc3ToolsUpdateWeb_Default.Models
         [Display(Name = "User name")]
         public string UserName { get; set; }
 
+        [Display(Name = "FirstName")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Surname")]
+        public string Surname { get; set; }
+
         [Required]
         [DataType(DataType.EmailAddress)]
         [Display(Name = "Email address")]
