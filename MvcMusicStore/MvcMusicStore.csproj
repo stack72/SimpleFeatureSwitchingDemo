@@ -169,7 +169,9 @@
   <ItemGroup>
     <Content Include="Views\Store\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Config\appSettings.Debug.config" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Views\StoreManager\Index.cshtml" />
   </ItemGroup>
