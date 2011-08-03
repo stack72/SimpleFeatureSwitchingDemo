@@ -76,6 +76,7 @@
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Configuration\ConfigurationManager.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MusicStoreEntities.cs" />
     <Compile Include="Models\Order.cs" />
