@@ -7,6 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using Mvc3ToolsUpdateWeb_Default.Models;
 using MvcMusicStore.Models;
+using MvcMusicStore.Models.Configuration;
 
 namespace Mvc3ToolsUpdateWeb_Default.Controllers
 {
@@ -78,7 +79,12 @@ namespace Mvc3ToolsUpdateWeb_Default.Controllers
 
         public ActionResult Register()
         {
-            return View();
+            var configManager = new ConfigurationManager();
+            if (configManager.GetProperty<bool>("EnableNewRegistrationSystem"))
+            {
+                return View();
+            }
+            return View("OldRegistrationPage");
         }
 
         //
