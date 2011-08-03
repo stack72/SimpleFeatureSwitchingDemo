@@ -79,8 +79,8 @@ namespace Mvc3ToolsUpdateWeb_Default.Controllers
 
         public ActionResult Register()
         {
-            var configManager = new ConfigurationManager();
-            if (configManager.GetProperty<bool>("EnableNewRegistrationSystem"))
+            var featureManager = new FeatureManager();
+            if (featureManager.GetSwitchSetting<bool>("EnableNewRegistrationSystem"))
             {
                 return View();
             }
